@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <svg style="display: none">
+      <defs>
+        <symbol id="checkmark">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+        </symbol>
+      </defs>
+    </svg>
+    <!-- Header section -->
+    <header>
+      <div class="layout-global-header">
+        <div class="layout-logo">
+            <a href="atoms.html"><span><em>My</em> Bucket List - Style Guide</span></a>
+        </div>
+        <nav>
+          <ul class="layout-global-nav">
+            <li><a href="atoms.html">Atoms</a></li>
+            <li><a href="molecules.html">Molecules</a></li>
+            <li><a href="organisms.html">Organisms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <hr>
+    <!-- Main section -->
+    <main>
+      <section>
+        <h3>1. Navigation Bar:</h3>
+        <div class="navigation">
+          <div class="logo">
+            <span><em>My</em> Bucket List</span>
+          </div>
+          <div class="search-bar">
+            <input class="input__field" type="text" placeholder="E.g. swimming with dolphins">
+            <!-- E.g. swimming with dolphins -->
+            <button class="btn">Search</button>
+          </div>
+          <div class="links">
+            <a href="">My Goals</a>
+          </div>
+          <div class="links">
+            <a href="">Inspiration</a>
+          </div>
+          <div class="user">
+            <a href=""><img src="assets/avatar.png" alt="user avatar"></a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>2. Create Goal Form:</h3>
+        <div>
+          <div class="form-element">
+            <label>Title</label>
+            <input class="input__field--form" type="text" placeholder="E.g., Ride a camel">
+          </div>
+          <div class="form-element">
+            <label>Add an image</label>
+            <div class="choose-file">
+              <div class="file-input">
+                <label for="input__field--file" class="file">choose a file</label>
+                <input class="input__field--file" type="file">      
+              </div>
+              <h5>Your image will be displayed at a 4:3 aspect ratio, cropped if necessary. 5MB limit</h5>
+            </div>
+          </div>
+          <div class="form-element">
+            <label>Add tags</label>
+            <input class="input__field--form" type="text" placeholder="Separate multiple tags with commas">
+          </div>
+          <div class="form-element">
+            <label>Description</label>
+            <textarea placeholder="Optional. 500 characters max."></textarea>
+          </div>
+          <div class="form-buttons">
+            <button class="btn btn--cancel">Cancel</button>
+            <button class="btn" type="submit">Create Goal</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>3. Log In Form:</h3>
+        <div>
+          <div class="form-element">
+            <label>Email</label>
+            <input class="input__field--email" type="email">
+          </div>
+          <div class="form-element">
+            <label>Password</label>
+            <input class="input__field--password" type="password">
+          </div>
+          <div class="form-element">
+            <label></label>
+            <div class="login-btns">
+              <div class="login-options">
+                <div class="remember">
+                  <input class="input__field--checkbox" type="checkbox">
+                  <h6>Remember me</h6>
+                </div>
+                <button class="btn btn--cancel forgot-pw">Forgot password?</button>
+              </div>
+              <button class="btn" type="submit">Log In</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>4. Goal Cards:</h3>
+        <ul class="cards">
+          <li class="card-slot">
+            <div class="card">
+              <div class="card__thumbnail">
+                <div class="image">
+                  <img src="./assets/northern-lights-small.jpg" alt="Northern lights above a house at night" 
+                    srcset="./assets/northern-lights-small.jpg 300w, ./assets/northern-lights-large.jpg 600w"/>
+                </div>
+                <div class="card__intro">
+                  <h3 class="card__title">See the Northern Lights</h3>
+                  <h6>1,598 doing this</h6>
+                </div>
+              </div>
+              <div class="card__footer">
+                <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                  <use xLink:href="#checkmark"></use>
+                </svg>
+                <h4>Today</h4>
+              </div>      
+            </div>
+          </li>
+          <li class="card-slot">
+            <div class="card">
+              <div class="card__thumbnail">
+                <div class="image">
+                  <img src="./assets/northern-lights-small.jpg" alt="Northern lights above a house at night" 
+                    srcset="./assets/northern-lights-small.jpg 300w, ./assets/northern-lights-large.jpg 600w"/>
+                </div>
+                <div class="card__intro">
+                  <h3 class="card__title">See the Northern Lights</h3>
+                  <h6>1,598 doing this</h6>
+                </div>
+              </div>
+              <div class="card__footer">
+                <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                  <use xLink:href="#checkmark"></use>
+                </svg>
+                <h4>Today</h4>
+              </div>      
+            </div>
+          </li>
+          <li class="card-slot">
+            <div class="card">
+              <div class="card__thumbnail">
+                <div class="image">
+                  <img src="./assets/northern-lights-small.jpg" alt="Northern lights above a house at night" 
+                    srcset="./assets/northern-lights-small.jpg 300w, ./assets/northern-lights-large.jpg 600w"/>
+                </div>
+                <div class="card__intro">
+                  <h3 class="card__title">See the Northern Lights</h3>
+                  <h6>1,598 doing this</h6>
+                </div>
+              </div>
+              <div class="card__footer">
+                <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                  <use xLink:href="#checkmark"></use>
+                </svg>
+                <h4>Today</h4>
+              </div>      
+            </div>
+          </li>
+        </ul>
+      </section>
+      
+    </main>
+
+    <!-- Footer section -->
+    <footer class="layout-global-footer">
+      <div class="layout-logo">
+        <a href="/"><span><em>My</em> Bucket List</span></a>
+      </div>
+      <div>
+        <p>&copy; Tuor 2021</p>
+      </div>
+    </footer>
+  </body>
+         
+</html>

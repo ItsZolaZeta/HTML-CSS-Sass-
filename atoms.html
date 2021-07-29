@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <svg style="display: none">
+      <defs>
+        <symbol id="checkmark">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+        </symbol>
+      </defs>
+    </svg>
+    <!-- Header section -->
+    <header>
+      <div class="layout-global-header">
+        <div class="layout-logo">
+            <a href="atoms.html"><span><em>My</em> Bucket List - Style Guide</span></a>
+        </div>
+        <nav>
+          <ul class="layout-global-nav">
+            <li><a href="atoms.html">Atoms</a></li>
+            <li><a href="molecules.html">Molecules</a></li>
+            <li><a href="organisms.html">Organisms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <hr>
+    <!-- Main section -->
+    <main>
+      <section>
+        <h3>1. Navigation Bar Items :</h3>
+        <div class="nav-items">
+          <div class="logo">
+            <span><em>My</em> Bucket List</span>
+          </div>
+          <div class="links">
+            <a href="">My Goals</a>
+          </div>
+          <div class="user">
+            <a href=""><img src="assets/avatar.png" alt="user avatar"></a>
+          </div>
+          <div class="search-input">
+            <input class="input__field input__field--atom search-atom-only" type="text" placeholder="E.g. swimming with dolphins">
+          </div>
+          <div class="search-btn"> 
+            <button class="btn">Search</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>2. Create Goal Form Items :</h3>
+        <div class="create-goal-items">
+          <div>
+            <h2>Create Goal</h2>
+          </div>
+          <div>
+            <label>Label</label>
+          </div>
+          <div>
+            <input class="input__field--form input__field--atom" type="text" placeholder="E.g., Ride a camel">
+          </div>
+          <div class="file-input">
+            <input class="input__field--file" type="file">
+            <label for="input__field--file">choose a file</label>
+          </div>
+          <div>
+            <textarea class="input__field--atom" placeholder="Optional. 500 characters max."></textarea>
+          </div>
+          <div class="cancel-btn">
+            <button class="btn btn--cancel">Cancel</button>
+          </div>
+          <div>
+            <button class="btn" type="submit">Create Goal</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>3. Log In Form Items :</h3>
+        <div class="login-items">
+          <div> 
+            <input class="input__field--email input__field--atom" type="email">
+          </div>
+          <div>
+            <input class="input__field--password input__field--atom" type="password">
+          </div>
+          <div>
+            <input class="input__field--checkbox" type="checkbox">
+          </div>
+          <div>
+            <h6>Remember me</h6>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>4. Card Goal Items :</h3>
+        <div class="card-items">
+          <div class="image">
+            <img src="./assets/northern-lights-small.jpg" alt="Northern lights above a house at night" 
+              srcset="./assets/northern-lights-small.jpg 300w, ./assets/northern-lights-large.jpg 600w"/>
+          </div>
+          <div>
+            <h3 class="card__title">See the Northern Lights</h3>
+          </div>
+          <div>
+            <h6>1,598 doing this</h6>
+          </div>
+          <div class="card__footer">
+            <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+              <use xLink:href="#checkmark"></use>
+            </svg>
+            <h4>Today</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="layout-global-footer">
+      <div class="layout-logo">
+        <a href="/"><span><em>My</em> Bucket List</span></a>
+      </div>
+      <div>
+        <p>&copy; Tuor 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>
