@@ -38,84 +38,86 @@
     <main>
       <section>
         <h3>1. Navigation Bar:</h3>
-        <div class="navigation">
-          <div class="logo">
-            <span><em>My</em> Bucket List</span>
-          </div>
-          <div class="search-bar">
-            <input class="input__field" type="text" placeholder="E.g. swimming with dolphins">
-            <!-- E.g. swimming with dolphins -->
-            <button class="btn">Search</button>
-          </div>
-          <div class="links">
-            <a href="">My Goals</a>
-          </div>
-          <div class="links">
-            <a href="">Inspiration</a>
-          </div>
-          <div class="user">
-            <a href=""><img src="assets/avatar.png" alt="user avatar"></a>
-          </div>
-        </div>
+        <nav>
+          <ul class="navigation">
+            <li class="logo">
+              <span><em>My</em> Bucket List</span>
+            </li>
+            <li class="search-bar">
+              <input class="input__field" type="text" placeholder="E.g. swimming with dolphins">
+              <!-- E.g. swimming with dolphins -->
+              <button class="btn">Search</button>
+            </li>
+            <li class="links">
+              <a href="">My Goals</a>
+            </li>
+            <li class="links">
+              <a href="">Inspiration</a>
+            </li>
+            <li class="user">
+              <a href=""><img src="assets/avatar.png" alt="user avatar"></a>
+            </li>
+          </ul>
+        </nav>
       </section>
 
       <section>
         <h3>2. Create Goal Form:</h3>
-        <div>
+        <form method="POST" action="create-new-goal">
           <div class="form-element">
-            <label>Title</label>
-            <input class="input__field--form" type="text" placeholder="E.g., Ride a camel">
+            <label for="goal-title">Title</label>
+            <input id="goal-title" class="input__field--form" type="text" placeholder="E.g., Ride a camel">
           </div>
           <div class="form-element">
             <label>Add an image</label>
             <div class="choose-file">
               <div class="file-input">
                 <label for="input__field--file" class="file">choose a file</label>
-                <input class="input__field--file" type="file">      
+                <input id="input__field--file" class="input__field--file" type="file">      
               </div>
               <h5>Your image will be displayed at a 4:3 aspect ratio, cropped if necessary. 5MB limit</h5>
             </div>
           </div>
           <div class="form-element">
-            <label>Add tags</label>
-            <input class="input__field--form" type="text" placeholder="Separate multiple tags with commas">
+            <label for="goal-tags">Add tags</label>
+            <input id="goal-tags" class="input__field--form" type="text" placeholder="Separate multiple tags with commas">
           </div>
           <div class="form-element">
-            <label>Description</label>
-            <textarea placeholder="Optional. 500 characters max."></textarea>
+            <label for="goal-description">Description</label>
+            <textarea id="goal-description" placeholder="Optional. 500 characters max."></textarea>
           </div>
           <div class="form-buttons">
             <button class="btn btn--cancel">Cancel</button>
             <button class="btn" type="submit">Create Goal</button>
           </div>
-        </div>
+        </form>
       </section>
 
       <section>
         <h3>3. Log In Form:</h3>
-        <div>
+        <form method="POST" action="authentication">
           <div class="form-element">
-            <label>Email</label>
-            <input class="input__field--email" type="email">
+            <label for="login-email">Email</label>
+            <input id="login-email" class="input__field--email" type="email">
           </div>
           <div class="form-element">
-            <label>Password</label>
-            <input class="input__field--password" type="password">
+            <label for="login-pw">Password</label>
+            <input id="login-pw" class="input__field--password" type="password">
           </div>
           <div class="form-element">
             <label></label>
             <div class="login-btns">
               <div class="login-options">
                 <div class="remember">
-                  <input class="input__field--checkbox" type="checkbox">
-                  <h6>Remember me</h6>
+                  <input id="custom-cb" class="custom-checkbox" type="checkbox">
+                  <label for="custom-cb" class="zeta"> Remember me</label>
                 </div>
                 <button class="btn btn--cancel forgot-pw">Forgot password?</button>
               </div>
               <button class="btn" type="submit">Log In</button>
             </div>
           </div>
-        </div>
+        </form>
       </section>
 
       <section>
