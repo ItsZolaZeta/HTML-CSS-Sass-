@@ -70,7 +70,7 @@
             <input class="input__field--form input__field--atom" type="text" placeholder="E.g., Ride a camel">
           </div>
           <div class="file-input">
-            <input class="input__field--file" type="file">
+            <input id="input__field--file" class="input__field--file" type="file">
             <label for="input__field--file">choose a file</label>
           </div>
           <div>
@@ -108,7 +108,8 @@
         <div class="card-items">
           <div class="image">
             <img src="./assets/northern-lights-small.jpg" alt="Northern lights above a house at night" 
-              srcset="./assets/northern-lights-small.jpg 300w, ./assets/northern-lights-large.jpg 600w"/>
+              srcset="./assets/northern-lights-small.jpg 300w, ./assets/northern-lights-large.jpg 600w"
+              sizes="(max-width: 400px) 300px, 600px"/>
           </div>
           <div>
             <h3 class="card__title">See the Northern Lights</h3>
